@@ -1,0 +1,195 @@
+/* removes white margin around edge of background image */
+body{
+  margin: 0 0 0 0;
+}
+/* background image */
+#background{
+  background-size: cover; opacity: 90%;
+  min-height: 100vh; /* so background stays full size of viewport*/
+}
+/* style main header*/
+.header {
+	text-align: center;
+	color: white;
+  padding-top: .2%;
+  border-bottom: 1px solid white;
+}
+/* jamie's pizzeria logo*/
+#logo{
+  width:11.5%;
+  margin-top: 1%;
+}
+/* image caption style */
+#h2 {
+	font-size:80%;
+}
+/* navigation menu */
+#nav {
+width: 100%; /*makes the menu width the same as the window width*/ 
+margin: 0 0 0 0; /*removes margin and padding*/
+padding: 0;
+list-style: none; /*removes bullets from the list*/
+background-color: white;
+}
+
+#nav li {
+float: left; /*floats list items left*/
+clear:right;
+padding-left:9.3%;
+font-size:80%;
+padding-top: 1%;
+}
+
+#nav li a {
+display: block; /*fills up the entire list item and makes the whole area clickable*/
+padding: 9px 25px; 
+text-decoration: none; /*removes the underline from the anchor*/ 
+font-weight: bold;
+color: white;
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#nav li a:hover {
+color: #c00; opacity: 50%;
+background-color: #fff;
+}
+
+/* main form stylings */
+.form{
+  margin: 1%;
+  margin-left:34%;
+  color:white;
+	position:relative;
+	font-family: "Courier New", Courier, monospace;
+  display:inline-block;
+  border: none;
+  border-radius: 4px;
+  background: rgba(1,1,1,0.5);/* allows change in opacity without affecting text opacity*/
+  padding-right:1.5%;
+  padding-left:.5%;
+  padding-top:1%;
+}
+
+/* first header in form */
+#formP1 {
+  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size:100%;
+  font-weight: bold;
+  color:#c90c0c;
+  margin: 0 0 0 0;
+}
+
+/* second header in form */
+#formP2 {
+  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-weight: bold;
+  font-size:100%;
+  color:#c90c0c;
+  text-align: left;
+  margin: 0 0 0 0;
+}
+
+/* form stylings for input of type text boxes*/
+input[type=text], select {
+  	width: 110%;
+  	padding: 5% 10px;
+  	margin: 5px 0;
+  	display: inline-block;
+  	border: 1px solid #c90c0c;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+  	border: 2px solid #c90c0c;
+  	transition: 0.5s;
+  	outline: none; /*removes deault 'blue' outline when field is selected*/
+    background-color:rgba(0, 0, 0, 0);/* allows change in opacity without affected text */
+    color:white;
+    font-family: "Courier New", Courier, monospace;
+}
+
+input[type=text]:focus {
+    border: 2px solid white; /*gives colour transition when user selects field*/
+}
+
+/* form styling for input of type password box*/
+input[type=password], select {
+  	width: 110%;
+  	padding: 5% 5px;
+  	margin: 5px 0;
+  	display: inline-block;
+  	border: 1px solid green;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+  	border: 2px solid #c90c0c;
+  	transition: 0.5s;
+  	outline: none; 
+    background-color:rgba(0, 0, 0, 0);
+    color:white;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* gives colour transition to password word when selected*/
+input[type=password]:focus {
+    border: 2px solid white;
+}
+
+/* submit box styling */
+input[type=submit] {
+  	width: 110%;
+  	background-color: white;
+  	color: black; opacity: 60%;
+  	padding: 6%;
+  	margin: 8px 0;
+  	border: none;
+  	border-radius: 4px;
+  	cursor: pointer;
+  	outline: none;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+}
+
+/* changes colour of submit box on hover*/
+input[type=submit]:hover {
+  	background-color: #c90c0c;
+}
+
+/* reset box styling */
+input[type=reset]{
+  	width: 90%;
+  	background-color: white; opacity:60%;
+  	color: black;
+  	padding:11px;
+  	margin: 8px 0;
+  	border: none;
+  	border-radius: 4px;
+  	cursor: pointer;
+  	outline:none;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+}
+
+/* changed colour of reset box on hover*/
+input[type=reset]:hover {
+    background-color: red;
+}
+
+/* style when total is displayed */
+#totalNow{
+  color: white;
+  font-size:200%;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  font-style: italic;
+  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+  text-align: center;
+}
+
+/* footer stylings*/
+.footer{
+  font-size: 80%;
+  padding:1px;
+	 clear:both;
+	 color: white;
+	 text-align: center;
+   font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+   background: rgba(1, 1, 1, 0.5); /* allows change in opacity without affected text */
+ }

@@ -1,0 +1,138 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head>	
+		<title>CA1 PART2</title>	
+		<meta charset="UTF-8">
+		<link href = "css/external.css" rel = "stylesheet"> <!--link to external .css stylesheet-->
+		<script src="js/mainAmyPercival.js"></script> <!--link external JavaScript-->
+		<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script><!-- jquery for alerts plugin-->
+		<script src="jQueryPlugin/jquery.alerts.js"></script> <!-- jquery alerts plugin1-->
+		<link href="jQueryPlugin/jquery.alerts.css" rel="stylesheet"> <!-- js alert plugin1 .css stylesheet-->	
+	</head>	
+		<body>
+<!--background image-->
+			<div id= "background" style="background-image: url('images/background.jpg');">
+<!-- nav menu -->
+			<div>
+				<ul id="nav">
+					<li><a href="#">H O M E</a></li>
+					<li><a href="#">O U R &nbsp;&nbsp; S T O R Y</a></li> <!--'&nbsp;' to create empty space-->
+					<li><a href="#">M E N U</a></li>
+					<li><a href="#">O R D E R</a></li>
+					<li><a href="#">C O N T A C T</a></li>
+				</ul>
+			</div>
+<!--header begins here-->
+			<div class = "header">
+				<figure> <!-- to add a caption underneath the logo-->
+					<img id = "logo" src = images/logo.png alt = "images/image of logo">
+						<figcaption> <!--content of caption-->
+							<div id = "h2"> 
+								<p> H&nbsp; A&nbsp; N&nbsp; D&nbsp; C&nbsp; R&nbsp; A&nbsp; F&nbsp; T&nbsp; E&nbsp; D&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; G&nbsp; O&nbsp; U&nbsp; R&nbsp; M&nbsp; E&nbsp; T&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; P&nbsp; I&nbsp; Z&nbsp; Z&nbsp; A
+								</p>
+							</div>	
+						</figcaption>				
+				</figure>
+			</div>
+		
+<!-- form begins here-->
+			<div class = "form">
+				<form name="pizzaForm" id = "pizzaForm" method="post" action=" mailto:x20163266@student.ncirl.ie" onsubmit="return !! validateForm() & calcPizza()"> <!-- call validate function in 'form' tag when user clicks submit button-->
+			<table> 
+				<tr>
+<!--first table heading-->	
+					<td>				
+						<p id = "formP1">E N T E R &nbsp;&nbsp; Y O U R &nbsp;&nbsp; D E T A I L S</p>	
+					</td>
+						<td></td><!--adding extra column as the 'html validator' was complaining that the number of columns of each row did not match-->
+						<td></td>
+					</tr>
+				<tr> 
+<!--username input field-->	
+					<td> 
+						Username: 
+					</td> 	
+						<td>									
+							<input type ="text" name ="username" size ="20"><br/>
+						</td> 
+							<td></td>
+						</tr>
+					<tr> 
+<!-- password input field -->				
+					<td> 
+						Password: 
+					</td>
+						<td>
+							<input type = "password" name = "password" size = "20"><br/><!-- 'size' changes length of input box-->
+						</td>
+					<td><td>
+				</tr> 
+			<tr>
+				<td>
+<!-- second table heading-->		 			
+					<p id = "formP2"> C H O O S E &nbsp;&nbsp; Y O U R &nbsp;&nbsp; P I Z Z A</p>
+				</td>
+					<td></td><!--adding extra column as the 'html validator' was complaining that the number of columns of each row did not match-->
+					<td></td>
+				</tr>
+			 <tr>
+<!-- pizza size input field -->			 	
+				<td> 
+					Size: 
+				</td>
+					<td>
+						<select id = "dropdown" onchange="super1()"> <!-- call function for alert on dropdown option select-->
+								<option value= "" disabled selected>Choose size</option><!--option user cannot select-->
+								<option value="5">Grande - &euro;5</option>
+								<option value="7">Extra-grande - &euro;7</option>
+								<option value="17">Supersize - &euro;17</option>
+						</select>
+					</td>
+						<td></td>
+					</tr>
+				<tr> 
+<!-- quantity input field -->				
+					<td> 
+						Quantity: 
+					</td> 			
+						<td>
+							<input type = "text" name = "quantity" id = "quantity"><br/>
+						</td>
+						<td></td>
+					</tr>
+				<tr>
+<!-- discount code input field-->				
+					<td> 
+						Discount code: 
+					</td>
+						<td>
+							<input type = "text" id = "discount" name = "discount" size ="20" ><br/>
+						</td>
+						<td></td>
+					</tr>
+			 	<tr>
+<!-- reset button-->			 	
+			 		<td>
+			 			<input type ="reset" value = "Clear Order"> 
+			 		</td>
+<!-- submit button -->
+			 			<td> 
+			 				<input id = "submit" type ="submit" name = "submit" value ="Submit Order"> 
+			 			</td>
+<!-- total displayed -->
+							<td id = "totalNow">
+						</td>
+			 		</tr>
+			</table>
+<!--form ends-->			
+		</form>
+	</div>
+		<div class = "footer">
+<!-- footer -->
+			<p> Buon appetito! </p>
+			<p> Copyrights © 2020  All Rights Reserved By Amy</p>
+			<p> Photo credit to Danielle MacInnes </p>
+		</div>
+	</div>						
+</body>
+</html>
